@@ -168,9 +168,15 @@ namespace ExLab3
 
             Console.WriteLine("Diagonala dreptugiului este: "+CalculeazaDiagonalaDreptunghiului(lungime, latime).ToString("f2"));
         }
+        /// <summary>
+        /// Returneaza diagonala dreptunghiului
+        /// </summary>
+        /// <param name="a">lungimea</param>
+        /// <param name="b">latimea</param>
+        /// <returns>Valoarea diaonalei dreptunghiului</returns>
         static double CalculeazaDiagonalaDreptunghiului(int a, int b)
         {
-            double diagonala = Math.Sqrt(a * a + b * b);
+            var diagonala = Math.Sqrt(Math.Pow(a,2) + Math.Pow(b,2));
             return diagonala;
         }
     }
